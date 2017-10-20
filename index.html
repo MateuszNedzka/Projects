@@ -2,63 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CodersLab</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Sit on chair</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-<header>
-  <div class="container row">
-    <h4 class="col">SIT ON HAIR</h4>
-      <nav class="col">
-        <ul>
-          <li><a href="#">O FIRMIE</a></li>
+    <header>
+      <div class="container row">
+        <div class="col-6">
+        <h4>Sit <span class="extraColor">on</span> Chair</h4>
+        </div>
+          <nav class="col-6">
             <ul>
-              <li><a href="#">Aktualności</a></li>
-              <li><a href="#">Nasz team</a></li>
-              <li><a href="#">Historia</a></li>
+              <li>
+                  <a href="#">O firmie</a>
+                    <ul class="submenu">
+                    <li><a href="#">Aktualności</a></li>
+                    <li><a href="#">Nasz team</a></li>
+                    <li><a href="#">Historia</a></li>
+                    </ul>
+              </li>
+              <li><a href="#">Galeria</a></li>
+              <li><a href="#">Kontakt</a></li>
             </ul>
-          <li><a href="#">GALERIA</a></li>
-          <li><a href="#">KONTAKT</a></li>
-        </ul>
-      </nav>
-  </div>
-</header>
-
-<banner>
-  <div class="container row">
-    <div class="col">
-    </div>
-    <img src="images/black_chair.png" class="col">
-    <div class="col">
-      <h2>SIT OT OUR CHAIR</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis consequatur esse soluta ab doloremque deserunt nihil numquam voluptas, architecto aut eius alias reiciendis. Nihil quas, minima, vitae dolores quis aperiam!
-      </p>
-      <button>ZOBACZ WIĘCEJ</button>
-    </div>
-    <div class="col">
-    </div>
-  </div>
-</banner>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-
-</footer>
-
+          </nav>
+      </div>
+    </header>
+    <section id="welcome">
+      <div class="container row">
+        <div class="col-6">
+            <div class="arrow_btn_l"></div>
+            <img src="./images/black_chair.png">
+        </div>
+        <div class="col-6">
+            <h2>Sit <span class="extraColor">on</span> our <span class="extraColor">chair</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis consequatur esse soluta ab doloremque deserunt nihil numquam voluptas, architecto aut eius alias reiciendis. Nihil quas, minima, vitae dolores quis aperiam!
+            </p>
+            <button>Zobacz więcej</button>
+            <div class="arrow_btn_r"></div>
+        </div>
+    </section>
+    <section id="offer">
+        <div class="container row">
+            <div class="col-4">
+                <img src="./images/box1_img.jpg">
+                <h4>Chair <span>clair</span></h4>
+                <div class="transparent"></div>
+            </div>
+            <div class="col-4">
+                <img src="./images/box2_img.jpg">
+                <h4>Chair <span>margarita</span></h4>
+                <div class="transparent"></div>
+            </div>
+            <div class="col-4">
+                <h4>Finds all inputs</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, atque consequuntur distinctio ea facere incidunt ipsam laudantium libero magni molestias odit.
+                    <br><br />
+                    Possimus quaerat, quis, quo recusandae sequi sint sit soluta!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="pricelist">
+        <div class="container row">
+            <h3>Cennik</h3>
+            <div class="col-4 overlap">
+                <div class="topCircle"></div>
+                <h4>Basic plan</h4>
+                <div class="midCircle">
+                    <span class="priceWeight">85<sup>99</sup></span>
+                    <small>Pln/msc</small>
+                </div>
+                <span>Zakup towaru + dowóz</span>
+                <span>Serwis</span>
+                <button>Dołącz</button>
+            </div>
+            <div class="col-4 overlap">
+                <div class="topCircle"></div>
+                <h4>Standard plan</h4>
+                <div class="midCircle">
+                    <span class="priceWeight">95<sup>99</sup></span>
+                    <small>Pln/msc</small>
+                </div>
+                <span>Zakup towaru + dowóz</span>
+                <span>Serwis</span>
+                <span>Gwarancja 5 lat</span>
+                <button>Dołącz</button>
+            </div>
+            <div class="col-4 overlap">
+                <div class="topCircle"></div>
+                <h4>Advance plan</h4>
+                <div class="midCircle">
+                    <span class="priceWeight">211<sup>00</sup></span>
+                    <small>Pln/msc</small>
+                </div>
+                <span>Zakup towaru + dowóz</span>
+                <span>Serwis</span>
+                <span>Gwarancja 6 lat</span>
+                <span>porady projektanta</span>
+                <button>Dołącz</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container row">
+            <h3>Kontakt</h3>
+            <form action="#">
+                <div class="col-6 form-group">
+                    <input type="text" class='form-control' id='name' name="name" placeholder="Imię">
+                    <input type="text" class='form-control' id='email' name="email" placeholder="email">
+                    <textarea name="nazwa" cols="20" rows="5" placeholder="Wiadomość"></textarea>
+                </div>
+                <div class="col-6 form-group">
+                    <img src="./images/red_chair.png">
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="agree"> Zgadzam się na przetwarzanie<br /> danych osobowych</label>
+                    </div>
+                        <button class='send-btn'>Wyślij</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container row">
+            <div class="col-6">
+                <h5>Copyright 2004 | All Rights Reserved - Sit On Chair</h5>
+            </div>
+            <div class="col-4">
+                <img src="./images/flickr.png">
+                <img src="./images/vimeo.png">
+                <img src="./images/pinterest.png">
+                <img src="./images/twitter.png">
+            </div>
+            <div class="col-2">
+                <h4>Sit <span>on</span> Chair</h4>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
